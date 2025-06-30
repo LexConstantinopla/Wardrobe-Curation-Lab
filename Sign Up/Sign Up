@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wardrobe Curation Lab</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .required::after{
+                content:" *";
+                color:red;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body style="background-color:#8AAEE0;">
+        <div class="header">
+            <h1 style="font-size:35px;">Wardrobe Curation Lab</h1>
+        </div>
+        <script src ="main.py"></script>
+        <form action="home.html">
+            <h4 style="font-size:25px;">Sign Up</h4>
+            <div class="div">
+            <label class="required">First Name</label>
+                <input type="text" placeholder="First Name" name="first name" required>
+            </div>
+            <div class="div">
+            <label class="required">Last Name</label> 
+                <input type="text" placeholder="Last Name" name="last name" required>
+            </div>
+            <div class="div">
+            <label class="required">Phone Number</label>
+                <input type="text" placeholder="Phone Number" name="phone number" required>
+            </div>
+            <div class="div">
+            <label class="required">Email</label>
+                <input type="text" placeholder="example@gmail.com" name="email" required>
+            </div>
+            <div class="div">
+            <label class="required">Password</label>
+                <input type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Password"
+            name="password" required>
+            <div>
+            </div>
+            <label class="required">Confirm Password</label>
+                <input type="password"
+            class="form-control"
+            id="confirm-pass"
+            name="password"
+            placeholder="Enter Password Again"
+            name="password" required>
+            <div class="passwordnote">
+                password must contain atleast one uppercase letter 
+            </div>
+            <label class="styled-checkbox">Remember me
+            <input type="checkbox">
+            <span class="checkmark"></span></label> 
+            </br>
+            <div>
+            <button type="submit" class="signup button" align ="center">Sign up</button>
+            </div>
+            <div class ="login" align ="center">Already have an account?
+            <a href="login.html" style="text-decoration:none;">Log in</a>
+            </div>
+            <script src="script.js"></script>
+        </form>
+    </body>
