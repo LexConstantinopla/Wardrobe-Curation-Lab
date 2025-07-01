@@ -56,11 +56,11 @@
             <input type="checkbox">
             <span class="checkmark"></span></label> 
             </br>
-            <div>
-            <button type="submit" class="button">Sign up</button>
-            </div>
-            <div class ="login">Already have an account?
-            <a href="login.html" onclick="switchForm('login, event')">Log in</a>
+                <div class="signup_btn">
+                <button type="submit" class="button">Sign up</button>
+                </div>
+                <div class ="login">Already have an account?
+                    <a href="login.html" onclick="switchForm('login, event')">Log in</a>
             </div>
             <script src="script.js"></script>
         </form>
