@@ -9,7 +9,7 @@
       <style>
             .required::after{
                 content:" *";
-                color:red;
+                color: #F0F3FA;
                 font-size: 25px;
             }
       </style>
@@ -19,39 +19,31 @@
         </div>
         <form action="home.html">
             <h4 align ="center" style="font-size:25px;">Login</h4>
-        <div class="div">
-        <label class="required">Email</label>
-        <input
-        type="email"
-        class="form-control"
-        id="email"
-        name="email"
-        placeholder="example@gmail.com"
-        name="email" required>
-      </div>
-      <div class="div">
-      <label class="required">Password</label>
-      <input
-      type="password"
-      class="form-control"
-      id="myInput"
-      name="password"
-      placeholder="Password"
-      name="password" required>
-      </div>
-      <div class ="forgot_password" align ="center"></div>
-      <label class="styled-checkbox">Remember me 
-      <input type="checkbox">
-      <span class="checkmark"></span>
-      </label>
-      <a href="forgot_password.html" style="text-decoration:none;">Forgot Password?
-      </a>
+          <div class="div">
+            <label class="required">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Username"required>
+            </div>
+          <div class="div">
+            <label class="required">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+          <div class="div">
+            <label class="required">Password</label>
+              <input type="password" class="form-control" id="myInput" name="password" placeholder="Password" required>
+        </div>
+        <div class ="forgot_password" align ="center"></div>
+          <label class="styled-checkbox">Remember me 
+            <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+            <a href="forgot_password.html" style="text-decoration:none;">Forgot Password?
+            </a>
       </br>
-      <div>
-      <button type="submit" class="button">Log in</button>
-      </div>
-      <div class ="login" align ="center"> Do you want to create an account?
-      <a href="sign_up.html" style="text-decoration:none;">Sign Up</a>
+        <div class="login_btn">
+          <button type="submit" class="button">Log in</button>
+        </div>
+        <div class ="login" align ="center"> Do you want to create an account? 
+            <a href="sign_up.html" onclick="switchForm('signup, event')">Sign Up</a>
       </div>
     </form>
   </body>
